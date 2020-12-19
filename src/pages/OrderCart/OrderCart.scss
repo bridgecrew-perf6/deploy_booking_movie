@@ -1,0 +1,103 @@
+@import '../../styles/styles.scss';
+
+.order-form{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    
+    .order-info{
+        position: relative;
+
+        .order-title{
+            font-weight: 400;
+            color: $danger;
+            margin: auto;
+        }
+
+        .ticket-img{
+            width: 100%;
+            height: 50vh;
+        }
+       
+        .ticket-info{
+            width: 100%;
+            height: auto;
+            position: absolute;
+            text-align: left;
+            top: 40%;
+            left: 75%;
+            transform: translate(-50%, -50%);
+
+            .ticket-item{
+                font-weight: 600;
+                color: $black;
+
+                .item{
+                    padding-left: 5px;
+                }
+                .time-location{
+                    color: $blue-3;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 996px) {
+    .container-form{
+        overflow: hidden;
+        height: auto;
+        .order-form{
+            height: 100%;
+            .order-info{
+                .ticket-info{
+                    .order-title{
+                        margin-top: 10px;
+                    }
+
+                    .ticket-item{
+                        width: 100%;
+                        height: 20px;
+                    }
+                    .item-address{
+                        width: 400px;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container-form{
+        overflow: hidden;
+        height: auto;
+        .order-form{
+            height: 100%;
+            .order-info{
+                .ticket-info{
+                    .order-title{
+                        margin-top: 40px;
+                        font-size: 30px;
+                    }
+                    
+                    .ticket-item{
+                        width: 100%;
+                        height: 20px;
+                        font-size: 20px;
+
+                        .item{
+                            font-size: 15px;
+                        }
+                    }
+                    .item-address{
+                        width: 400px;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

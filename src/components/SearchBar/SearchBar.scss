@@ -1,0 +1,21 @@
+@import '../../styles/styles.scss';
+
+// fix bug css 
+.MuiFormControl-marginNormal {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.MuiOutlinedInput-notchedOutline{
+    border-color: none;
+    &:hover {
+    border-color: none;
+    }
+}
+
+.MuiAutocomplete-option{
+    color: $gray !important;
+}
+.MuiAutocomplete-option[data-focus="true"] {
+    background-color: $blue-3 !important;
+}
